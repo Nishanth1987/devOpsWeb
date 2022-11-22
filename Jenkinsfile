@@ -1,7 +1,5 @@
 pipeline{
-    agent {
-        label 'linuxagent'
-    }
+    agent any
     tools{
         maven 'local_maven'
     }
@@ -19,8 +17,7 @@ pipeline{
         }
         stage ('Deploy to tomcat server') {
             steps{
-
-                echo "Deployment"
+                
             }
         }
     }
